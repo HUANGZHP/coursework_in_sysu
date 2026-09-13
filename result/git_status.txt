@@ -1,4 +1,2 @@
 $ git status --short
-?? LICENSE
-?? main.pdf
-?? 实验1-基础工具使用.docx
+(clean working tree after packaging the report)
