@@ -11,6 +11,7 @@
 
 # Local editor and system files
 .vscode/
+__pycache__/
 Thumbs.db
 desktop.ini
 

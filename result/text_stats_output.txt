@@ -1,0 +1,12 @@
+file: code\sample.txt
+tokens: 67
+unique: 56
+rank token count
+   1 and              3
+   2 a                2
+   3 codex            2
+   4 git              2
+   5 test             2
+   6 the              2
+   7 制                2
+   8 控                2
