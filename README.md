@@ -59,3 +59,5 @@ python code/text_stats.py code/sample.txt --top 8
 ```
 
 报告中的远程仓库命令使用占位符 `<username>`，提交 GitHub 时请替换为个人账号；仓库和截图中不得出现 API Key、密码或访问令牌。
+
+远程更新验证：本行在另一份克隆目录中修改后提交，用于练习本地 `git pull`。
