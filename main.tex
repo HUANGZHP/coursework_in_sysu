@@ -7,6 +7,7 @@
 \usepackage{graphicx}
 \usepackage{listings}
 \usepackage{xcolor}
+\setlength{\headheight}{15pt}
 
 \definecolor{codegray}{RGB}{75,85,99}
 \definecolor{codeblue}{RGB}{30,64,175}
@@ -32,6 +33,7 @@
 \lstset{style=mystyle}
 
 \headl{学号 待填写}
+\headc{}
 \headr{数据安全和隐私保护}
 \lessonTitle{数据安全和隐私保护}
 \reportTitle{实验一 实验基础工具使用}
@@ -184,7 +186,7 @@ git log --oneline --graph --decorate -n 5
 
 实验结果表明，样例共提取 67 个 token，其中不同 token 为 56 个；出现次数最多的是 \texttt{and}，共 3 次。\texttt{a}、\texttt{codex}、\texttt{git}、\texttt{test} 和 \texttt{the} 各出现 2 次。中英文混合输入能够被统一处理，英文大小写不会造成重复计数，中文字符则按字符进行可复现的简单统计。
 
-边界测试中，执行 \texttt{python code/text\_stats.py code/sample.txt --top 0} 得到错误信息“--top must be a positive integer”，进程以非零状态退出，说明命令行参数校验生效。\texttt{python -m py_compile code/text\_stats.py} 也顺利完成，说明程序不存在语法错误。
+边界测试中，执行 \verb|python code/text_stats.py code/sample.txt --top 0| 得到错误信息“--top must be a positive integer”，进程以非零状态退出，说明命令行参数校验生效。\verb|python -m py_compile code/text_stats.py| 也顺利完成，说明程序不存在语法错误。
 
 \section{实验总结}
 

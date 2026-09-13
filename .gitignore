@@ -12,6 +12,9 @@
 # Local editor and system files
 .vscode/
 __pycache__/
+qa_pdf/
+tex-format-tmp/
+*.fmt
 Thumbs.db
 desktop.ini
 
