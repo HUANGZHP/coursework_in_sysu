@@ -1,0 +1,4 @@
+Git helps researchers keep code history clear.
+Codex can read a project, generate a small program, and help test it.
+Git and Codex should be used together: review the diff, run the test, and protect private data.
+版本控制让代码修改可追踪。版本控制也帮助实验报告保存清晰的结果。
