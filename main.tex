@@ -66,7 +66,7 @@
     \item 报告应记录关键命令、重要操作、运行结果、代码修改情况和实验总结，且不得泄露 API Key、密码或访问令牌。
 \end{enumerate}
 
-本报告以一个仅依赖 Python 标准库的文本词频统计程序作为 Codex 辅助编程任务，并用程序输出制作 LaTeX 矢量图。GitHub 远程地址使用个人账号时才可填写；本地已用 bare remote 完成等价的 push/pull 流程验证，报告中不伪造个人 GitHub 操作记录。
+本报告以一个仅依赖 Python 标准库的文本词频统计程序作为 Codex 辅助编程任务，并用程序输出制作 LaTeX 矢量图。本次作业的 GitHub 仓库为 \url{https://github.com/HUANGZHP/coursework_in_sysu}，\texttt{main} 分支已完成推送；本地 bare remote 用于补充验证 push/pull 流程。
 
 \section{实验原理}
 
@@ -147,7 +147,7 @@ git diff --staged
 git commit -m "add experiment result and report"
 \end{lstlisting}
 
-为了验证远程同步语义，本地在仓库的 Git 元数据目录中建立了一个 bare remote，执行了与 GitHub 相同的命令：
+为了验证远程同步语义，本地先在仓库的 Git 元数据目录中建立了一个 bare remote，执行了与 GitHub 相同的命令：
 
 \begin{lstlisting}[language=bash,caption={远程推送与更新同步}]
 git remote add origin .git/remote.git
@@ -157,7 +157,7 @@ git pull --ff-only
 git log --oneline --graph --decorate -n 5
 \end{lstlisting}
 
-如果要连接个人 GitHub 仓库，只需将 origin 替换为个人 HTTPS 地址，再执行 \texttt{git push -u origin main}；首次认证应通过浏览器或凭据管理器完成，不能把密码或令牌写进命令、脚本或报告。本地最终提交历史记录见图~\ref{fig:gitrecord} 和附录输出文件。
+完成本地验证后，本次又将同一 \texttt{main} 分支推送到上述个人 GitHub 仓库，远程名为 \texttt{github}，远程分支与本地提交 \texttt{d6db243} 一致。认证通过 SSH 密钥完成，私钥没有写入命令、脚本或报告。本地最终提交历史记录见图~\ref{fig:gitrecord} 和附录输出文件。
 
 \begin{figure}[htbp]
     \centering
